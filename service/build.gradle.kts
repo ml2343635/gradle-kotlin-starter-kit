@@ -1,0 +1,30 @@
+plugins {
+    id("org.springframework.boot")
+    kotlin("jvm")
+    kotlin("plugin.spring")
+    kotlin("plugin.jpa")
+}
+
+dependencies {
+    api(project(":storage:mysql"))
+    implementation(kotlin("stdlib"))
+    implementation(kotlin("reflect"))
+    implementation(kotlin("noarg"))
+    implementation(kotlin("allopen"))
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.springframework.boot:spring-boot-starter-amqp")
+    implementation("org.springframework.security:spring-security-web")
+    implementation("org.springframework.security:spring-security-config")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+    implementation("io.jsonwebtoken:jjwt-api")
+    implementation("io.jsonwebtoken:jjwt-impl")
+    implementation("io.jsonwebtoken:jjwt-jackson")
+    implementation("com.squareup.retrofit2:retrofit")
+    implementation("com.squareup.retrofit2:converter-jackson")
+    implementation("com.squareup.retrofit2:converter-scalars")
+    implementation("com.squareup.okhttp3:logging-interceptor")
+    runtimeOnly("mysql:mysql-connector-java")
+    annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+}

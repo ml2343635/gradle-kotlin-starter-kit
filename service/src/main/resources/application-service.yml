@@ -1,0 +1,6 @@
+spring:
+  config.import:
+    - classpath:application-storage-mysql.yml
+    - classpath:application-common.yml
+  main:
+    allow-bean-definition-overriding: true

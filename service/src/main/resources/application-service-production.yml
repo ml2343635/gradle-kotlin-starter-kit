@@ -1,0 +1,4 @@
+starter: # Replace to your own project name
+  jwt:
+    secret-key: ${JWT_SECRET_KEY}
+    expiration-time: ${JWT_EXPIRATION_TIME}

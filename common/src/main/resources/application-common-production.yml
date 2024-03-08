@@ -1,0 +1,3 @@
+starter: # Replace to your own project name
+  crypto:
+    secret-key: ${CRYPTO_SECRET_KEY}

@@ -1,0 +1,4 @@
+starter: # Replace to your own project name
+  jwt:
+    secret-key: a4670e3171f0aa12541a4b57eb8049fa79235399e375dd3f41f4ffc8ac2f39415c8f7168629506709f2665e020dc940f7acd8f4e98ece2aef93fa17ab06efb32
+    expiration-time: 2592000
