@@ -10,7 +10,7 @@ plugins {
 
 jib {
 	from {
-		image = "306886477478.dkr.ecr.ap-northeast-1.amazonaws.com/kaneko-backend-base-image:latest"
+		image = "adoptopenjdk/openjdk11:jre-11.0.11_9-ubi-minimal"
 	}
 	to {
 		image = "starter/starter-api"
